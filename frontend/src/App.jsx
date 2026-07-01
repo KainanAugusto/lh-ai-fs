@@ -34,8 +34,12 @@ function Badge({ text, kind }) {
 function confBar(score, level) {
   const pct = Math.round((Number(score) || 0) * 100)
   return (
-    <div className={`confbar ${level}`} title={`Confidence ${pct}%`} aria-label={`Confidence ${pct}%`}>
-      <span style={{ width: `${pct}%` }} />
+    <div className="confidence" title={`Confidence ${pct}% — how sure the pipeline is this issue is real`}>
+      <span className="conf-label">Confidence</span>
+      <div className={`confbar ${level}`} aria-label={`Confidence ${pct}%`}>
+        <span style={{ width: `${pct}%` }} />
+      </div>
+      <span className="conf-pct">{pct}%</span>
     </div>
   )
 }
@@ -260,8 +264,9 @@ function Report({ report, confFilter, setConfFilter, showRaw, setShowRaw }) {
       {/* Ranked findings */}
       <section className="section">
         <h2>Top Findings <span className="count">{visibleScored.length} of {scored.length}</span></h2>
-        <p className="section-hint">Ranked by confidence. Document-grounded findings outrank citation verdicts that rely on legal knowledge alone.</p>
+        <p className="section-hint"><strong>Two independent axes:</strong> severity = how damaging the issue is if it's real; confidence = how sure we are it's real. A flag can rank high on both. Ranked by confidence — document-grounded findings outrank citation verdicts that rely on legal knowledge alone.</p>
         <div className="filters">
+          <span className="filter-label">Confidence</span>
           <div className="group" role="group" aria-label="Filter by confidence">
             {['all', 'high', 'medium', 'low'].map((c) => (
               <button key={c} className={confFilter === c ? 'active' : ''} onClick={() => setConfFilter(c)}>
@@ -277,7 +282,6 @@ function Report({ report, confFilter, setConfFilter, showRaw, setShowRaw }) {
             <div className="finding-head">
               <Badge text={`${f.severity} severity`} kind={f.severity} />
               <Badge text={f.finding_type} kind="muted" />
-              <span className="meta">{Math.round((f.confidence_score || 0) * 100)}% confidence</span>
             </div>
             <div className="summary">{f.summary}</div>
             {confBar(f.confidence_score, f.confidence)}

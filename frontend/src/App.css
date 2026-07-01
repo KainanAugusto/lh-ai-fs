@@ -120,6 +120,7 @@
 
 /* ---- Filters --------------------------------------------------------- */
 .filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 14px 0 4px; }
+.filters .filter-label { font-size: 13px; font-weight: 600; color: var(--text-muted); }
 .filters .group { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); }
 .filters .group button { font: inherit; font-size: 13px; padding: 6px 12px; border: 0; background: transparent; color: var(--text-muted); cursor: pointer; }
 .filters .group button.active { background: var(--primary); color: #fff; }
@@ -148,12 +149,15 @@
 .case-cite { font-weight: 400; color: var(--text-faint); }
 .proposition { font-size: 14px; color: var(--text); margin-top: 6px; }
 
-/* confidence bar */
-.confbar { height: 6px; border-radius: 4px; background: var(--low-bg); overflow: hidden; margin-top: 10px; }
-.confbar > span { display: block; height: 100%; border-radius: 4px; }
-.confbar.high > span { background: var(--good-fg); }
-.confbar.medium > span { background: var(--medium-fg); }
-.confbar.low > span { background: var(--text-faint); }
+/* confidence meter — a neutral "how sure are we" gauge. Deliberately NOT the
+   red/amber/green severity palette: a green bar on a serious flag read as
+   "all good", colliding with the HIGH SEVERITY badge right above it. Confidence
+   (how sure) and severity (how damaging) are separate axes, shown separately. */
+.confidence { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+.conf-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--text-faint); flex-shrink: 0; }
+.conf-pct { font-size: 12px; font-weight: 600; color: var(--text-muted); flex-shrink: 0; min-width: 34px; text-align: right; }
+.confbar { flex: 1; height: 6px; border-radius: 4px; background: var(--low-bg); overflow: hidden; }
+.confbar > span { display: block; height: 100%; border-radius: 4px; background: var(--primary); }
 
 /* evidence quote — verbatim from a source document */
 .quote { border-left: 3px solid #c9d2db; padding: 8px 14px; margin: 10px 0 2px; color: #3a4654; font-style: italic; background: #f7f8fa; border-radius: 0 6px 6px 0; }
