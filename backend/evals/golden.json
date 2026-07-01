@@ -1,0 +1,56 @@
+{
+  "description": "Hand-annotated ground truth for Rivera v. Harmon Construction Group. Each item is a real defect planted in the documents, with its origin. A finding 'catches' an item if its text (in the right category) contains every keyword of any one signal set (case-insensitive).",
+  "items": [
+    {
+      "id": "incident_date_inconsistency",
+      "category": "consistency",
+      "description": "MSJ states the incident date as 'March 14, 2021'; the police report, medical records, and witness statement all say 'March 12, 2021'.",
+      "origin": {
+        "msj": "motion_for_summary_judgment.txt:19,27",
+        "contradicted_by": ["police_report.txt:6", "medical_records_excerpt.txt:9", "witness_statement.txt:17"]
+      },
+      "signals": [["march 14", "march 12"]]
+    },
+    {
+      "id": "ppe_contradiction",
+      "category": "consistency",
+      "description": "MSJ asserts as 'undisputed' that Rivera was NOT wearing required PPE; police report and witness statement say he WAS wearing a hard hat and harness.",
+      "origin": {
+        "msj": "motion_for_summary_judgment.txt:29",
+        "contradicted_by": ["police_report.txt:50-51", "witness_statement.txt:35"]
+      },
+      "signals": [["protective equipment", "harness"], ["protective equipment", "hard hat"], ["ppe", "harness"]]
+    },
+    {
+      "id": "retained_control_omission",
+      "category": "consistency",
+      "description": "MSJ claims Apex (not Harmon) controlled the work; the record shows Harmon's foreman Donner directed the crew to that section and dismissed a safety concern (retained-control exception to Privette).",
+      "origin": {
+        "msj": "motion_for_summary_judgment.txt:39-41",
+        "contradicted_by": ["police_report.txt:55", "witness_statement.txt:25-33,45-47"]
+      },
+      "signals": [["apex", "donner"], ["apex", "harmon", "control"], ["foreman", "directed"]]
+    },
+    {
+      "id": "privette_overstated",
+      "category": "citation",
+      "description": "MSJ quotes Privette for an absolute 'a hirer is never liable' rule; Privette is a REBUTTABLE presumption with recognized retained-control exceptions, so the rule is overstated.",
+      "origin": {"msj": "motion_for_summary_judgment.txt:39"},
+      "signals": [["privette"]]
+    },
+    {
+      "id": "statute_of_limitations_math",
+      "category": "any",
+      "description": "MSJ says 'one year and 362 days' between incident (March 14, 2021 per MSJ) and filing (March 10, 2023) — a verifiable numeric claim worth checking.",
+      "origin": {"msj": "motion_for_summary_judgment.txt:55"},
+      "signals": [["362"], ["one year and 362"]]
+    },
+    {
+      "id": "unverifiable_footnote_citations",
+      "category": "citation",
+      "description": "Footnote 1 string-cites six cases (incl. out-of-state TX/FL) never discussed in the body; several appear to be unverifiable/likely fabricated and should be flagged as unverifiable rather than accepted.",
+      "origin": {"msj": "motion_for_summary_judgment.txt:71"},
+      "signals": [["torres"], ["blackwell"], ["dixon"], ["okafor"], ["nguyen"], ["reeves"]]
+    }
+  ]
+}

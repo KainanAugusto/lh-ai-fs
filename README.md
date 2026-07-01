@@ -14,7 +14,7 @@ Treat both parts seriously. The production readiness plan is not an appendix; it
 ### Docker (recommended)
 
 ```bash
-cp .env.example .env      # Add your OpenAI API key
+cp backend/.env.example backend/.env      # Add your OpenAI API key
 docker compose up --build
 ```
 
@@ -46,6 +46,99 @@ npm run dev
 ```
 
 The UI runs at `http://localhost:5175`.
+
+---
+
+## This Implementation
+
+A 5-agent pipeline that flags problems in the *Rivera v. Harmon Construction Group* motion. Every flag
+is grounded in a verbatim quote from the source documents — nothing is asserted without evidence.
+
+### Architecture
+
+```
+POST /analyze
+  └─ pipeline.py
+       Extractor ─▶ ┌ Citation Verifier  ┐ ─▶ Confidence Scorer ─▶ Judicial Memo
+                    └ Consistency Checker ┘        (ranks flags)     (1-paragraph memo)
+                       (run concurrently)
+```
+
+| Agent | File | Role |
+|---|---|---|
+| Citation & Fact Extractor | [`backend/agents/extractor.py`](backend/agents/extractor.py) | Extracts citations + factual claims from the MSJ (no judgment) |
+| Citation Verifier | [`backend/agents/citation_verifier.py`](backend/agents/citation_verifier.py) | Does each authority support its proposition? Quote accurate? `unverifiable` when unsure |
+| Consistency Checker | [`backend/agents/consistency_checker.py`](backend/agents/consistency_checker.py) | Cross-checks MSJ facts vs. police report / medical records / witness statement |
+| Confidence Scorer | [`backend/agents/confidence_scorer.py`](backend/agents/confidence_scorer.py) | Calibrated confidence + ranking; deterministic fallback if it fails |
+| Judicial Memo | [`backend/agents/judicial_memo.py`](backend/agents/judicial_memo.py) | One-paragraph synthesis for a judge |
+
+Agents exchange **typed Pydantic objects** ([`backend/schemas.py`](backend/schemas.py)), not raw text.
+
+**Reliability built in:**
+- **Grounding guardrail** ([`backend/grounding.py`](backend/grounding.py)) — before anything is scored or
+  shown, findings whose quote is not *verbatim* in the source are dropped (fabricated contradiction) or
+  have the fabricated quote stripped (citation). "Nothing invented" is enforced at runtime, not just
+  measured in the eval, using the same shared check.
+- **Graceful degradation** — every agent is isolated; a failure becomes an entry in `report.errors`.
+  The report carries an explicit `status` (`completed` / `partial` / `failed`) so the UI never renders a
+  failed run as a clean "no issues found".
+- **Fails fast** — per-request timeout + bounded retries, so a slow/rate-limited provider surfaces a
+  reported error instead of hanging.
+- `GET /health` liveness probe; deterministic unit tests (`pytest`) for the grounding + document layers.
+
+### LLM provider config
+
+The code uses the OpenAI SDK but is fully `.env`-driven, so any OpenAI-compatible endpoint works:
+
+```bash
+# OpenAI (default — just set the key)
+OPENAI_API_KEY=sk-...
+
+# OR Google Gemini free tier (OpenAI-compatible gateway)
+OPENAI_API_KEY=...your-key...
+OPENAI_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
+MODEL=gemini-2.5-flash
+```
+
+> **Model quality matters — the eval measures it.** The pipeline is model-agnostic; the eval suite
+> surfaces the tradeoff honestly across providers (all keep **0% hallucination** thanks to verbatim
+> grounding, except the weakest):
+>
+> | Model | Recall | Precision (lower-bound) | Hallucination |
+> |---|---|---|---|
+> | `gemini-2.5-flash` (recommended) / OpenAI `gpt-4o` | 100% | 82% | 0% |
+> | `gemini-2.5-flash-lite` | 83% | 83% | 17% |
+> | Groq `llama-3.3-70b-versatile` | 67% | 100% | 0% |
+>
+> Use `gemini-2.5-flash` or `gpt-4o` for the headline numbers; the others are free, lower-quota
+> fallbacks that trade recall for availability.
+
+### Running the eval suite
+
+```bash
+cd backend
+python run_evals.py                 # runs the pipeline live, then scores it
+python run_evals.py --report evals/last_report.json   # score a saved report, no LLM calls
+```
+
+Metrics: **recall** (known defects caught), **precision** (golden lower-bound), and a **deterministic
+hallucination rate** (every evidence quote must appear verbatim in its source). See
+[`backend/evals/metrics.py`](backend/evals/metrics.py) and the ground-truth set in
+[`backend/evals/golden.json`](backend/evals/golden.json).
+
+### Unit tests (no LLM, no API key needed)
+
+```bash
+cd backend
+pytest -q          # deterministic tests for the grounding guardrail + document layer
+```
+
+### Documents
+
+- **Part 2 — Production Readiness Plan:** [`docs/production-readiness.md`](docs/production-readiness.md)
+- **Reflection:** [`docs/reflection.md`](docs/reflection.md)
+
+---
 
 ## Challenge Structure
 

@@ -1,0 +1,347 @@
+{
+  "case_name": "Rivera v. Harmon Construction Group",
+  "citation_findings": [
+    {
+      "case_name": "Privette v. Superior Court",
+      "citation": "5 Cal.4th 689, 695 (1993)",
+      "proposition": "Under California law, a hirer of an independent contractor is presumptively not liable for injuries sustained by the contractor's employees while performing the contracted work.",
+      "verdict": "supports",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": false,
+      "reasoning": "Privette v. Superior Court established the general rule that a hirer of an independent contractor is not liable for injuries sustained by the contractor's employees while performing the contracted work, thereby abrogating the peculiar risk doctrine in this context. The proposition accurately reflects this core holding.",
+      "evidence_quote": "Under California law, a hirer of an independent contractor is presumptively not liable for injuries sustained by the contractor's employees while performing the contracted work."
+    },
+    {
+      "case_name": "Privette v. Superior Court",
+      "citation": "Id. at 702",
+      "proposition": "A hirer is never liable for injuries sustained by an independent contractor's employees when the injuries arise from the contracted work.",
+      "verdict": "overstated",
+      "quote_accuracy": "unverifiable",
+      "is_problem": true,
+      "reasoning": "The Privette doctrine, while generally limiting hirer liability, is not absolute. Subsequent California Supreme Court cases (e.g., Hooker v. Department of Transportation) have clarified that a hirer can be liable if its retained control over the worksite affirmatively contributed to the injury. The proposition that a hirer is 'never liable' is an overstatement of the law. I cannot verify the accuracy of the direct quote without the full text of the opinion.",
+      "evidence_quote": "As the Supreme Court held, \"A hirer is never liable for injuries sustained by an independent contractor's employees when the injuries arise from the contracted work.\" Id. at 702."
+    },
+    {
+      "case_name": "Whitmore v. Delgado Scaffolding Co.",
+      "citation": "334 F. Supp. 2d 1189, 1195 (C.D. Cal. 2004)",
+      "proposition": "granting summary judgment to hirer where subcontractor controlled scaffolding operations and the injured worker assumed risks inherent to the trade.",
+      "verdict": "unverifiable",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": true,
+      "reasoning": "I do not have reliable, specific knowledge of the holding of Whitmore v. Delgado Scaffolding Co. to confidently verify the proposition. As a federal district court case, its specific holding is not generally known.",
+      "evidence_quote": "See also Whitmore v. Delgado Scaffolding Co., 334 F. Supp. 2d 1189, 1195 (C.D. Cal. 2004) (granting summary judgment to hirer where subcontractor controlled scaffolding operations and the injured worker assumed risks inherent to the trade)."
+    },
+    {
+      "case_name": "Kellerman v. Pacific Coast Construction, Inc.",
+      "citation": "887 F.2d 1204, 1209 (9th Cir. 1991)",
+      "proposition": "Harmon's documented compliance with all applicable OSHA regulations during the relevant period creates a rebuttable presumption that it exercised reasonable care with respect to worksite safety.",
+      "verdict": "unverifiable",
+      "quote_accuracy": "unverifiable",
+      "is_problem": true,
+      "reasoning": "I do not have reliable, specific knowledge of the holding of Kellerman v. Pacific Coast Construction, Inc. to confidently verify that it establishes a rebuttable presumption of reasonable care based on OSHA compliance. While OSHA compliance is generally evidence of due care, whether it creates a rebuttable presumption is a specific legal rule. I also cannot verify the accuracy of the direct quote without the full text of the opinion.",
+      "evidence_quote": "Harmon's documented compliance with all applicable OSHA regulations during the relevant period creates a rebuttable presumption that it exercised reasonable care with respect to worksite safety. Kellerman v. Pacific Coast Construction, Inc., 887 F.2d 1204, 1209 (9th Cir. 1991) (\"Where an employer demonstrates full compliance with applicable OSHA standards, it is entitled to a rebuttable presumption that it met the standard of care in negligence.\")."
+    },
+    {
+      "case_name": "Seabright Insurance Co. v. US Airways, Inc.",
+      "citation": "52 Cal.4th 590, 598 (2011)",
+      "proposition": "the California Supreme Court has recognized that compliance with statutory safety requirements is highly probative of the exercise of due care.",
+      "verdict": "supports",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": false,
+      "reasoning": "It is a well-established principle in California negligence law that compliance with statutory safety requirements is highly probative evidence of due care, though not conclusive. This proposition is consistent with general legal principles and the holding of Seabright Insurance Co. v. US Airways, Inc.",
+      "evidence_quote": "Furthermore, the California Supreme Court has recognized that compliance with statutory safety requirements is highly probative of the exercise of due care. Seabright Insurance Co. v. US Airways, Inc., 52 Cal.4th 590, 598 (2011)."
+    },
+    {
+      "case_name": "California Code of Civil Procedure Section 335.1",
+      "citation": "California Code of Civil Procedure Section 335.1",
+      "proposition": "the statute of limitations for personal injury claims is two years.",
+      "verdict": "supports",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": false,
+      "reasoning": "California Code of Civil Procedure Section 335.1 explicitly states that the statute of limitations for an action for injury to, or for the death of, an individual caused by the wrongful act or neglect of another is two years.",
+      "evidence_quote": "Under California Code of Civil Procedure Section 335.1, the statute of limitations for personal injury claims is two years."
+    },
+    {
+      "case_name": "Torres v. Granite Falls Dev. Corp.",
+      "citation": "198 Cal.App.4th 223 (2011)",
+      "proposition": "Support for the proposition that an unblemished OSHA inspection record demonstrates safety practices met or exceeded regulatory requirements, effectively insulating a party from tort liability predicated on alleged safety failures.",
+      "verdict": "unverifiable",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": true,
+      "reasoning": "I do not have reliable, specific knowledge of the holding of Torres v. Granite Falls Dev. Corp. to confidently verify that it supports the proposition that an unblemished OSHA record 'effectively insulates' a party from tort liability. This is a strong claim that goes beyond merely being 'highly probative' of due care, and I cannot confirm this specific holding.",
+      "evidence_quote": "See also Torres v. Granite Falls Dev. Corp., 198 Cal.App.4th 223 (2011);"
+    },
+    {
+      "case_name": "Blackwell v. Sunrise Contractors, Inc.",
+      "citation": "45 Cal.App.4th 1012 (1996)",
+      "proposition": "Support for the proposition that an unblemished OSHA inspection record demonstrates safety practices met or exceeded regulatory requirements, effectively insulating a party from tort liability predicated on alleged safety failures.",
+      "verdict": "unverifiable",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": true,
+      "reasoning": "I do not have reliable, specific knowledge of the holding of Blackwell v. Sunrise Contractors, Inc. to confidently verify that it supports the proposition that an unblemished OSHA record 'effectively insulates' a party from tort liability. This is a strong claim that goes beyond merely being 'highly probative' of due care, and I cannot confirm this specific holding.",
+      "evidence_quote": "Blackwell v. Sunrise Contractors, Inc., 45 Cal.App.4th 1012 (1996);"
+    },
+    {
+      "case_name": "Dixon v. Lone Star Structural, LLC",
+      "citation": "387 S.W.3d 154 (Tex. App. 2012)",
+      "proposition": "Support for the proposition that an unblemished OSHA inspection record demonstrates safety practices met or exceeded regulatory requirements, effectively insulating a party from tort liability predicated on alleged safety failures.",
+      "verdict": "unverifiable",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": true,
+      "reasoning": "This is a Texas Court of Appeals case, and its holding would be based on Texas law, not California law. While it might be cited for persuasive authority, it cannot directly establish California legal principles. I also do not have reliable, specific knowledge of its holding to verify the strong proposition that an unblemished OSHA record 'effectively insulates' a party from tort liability.",
+      "evidence_quote": "Dixon v. Lone Star Structural, LLC, 387 S.W.3d 154 (Tex. App. 2012);"
+    },
+    {
+      "case_name": "Okafor v. Brightline Builders, Inc.",
+      "citation": "291 So.3d 614 (Fla. Dist. Ct. App. 2019)",
+      "proposition": "Support for the proposition that an unblemished OSHA inspection record demonstrates safety practices met or exceeded regulatory requirements, effectively insulating a party from tort liability predicated on alleged safety failures.",
+      "verdict": "unverifiable",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": true,
+      "reasoning": "This is a Florida District Court of Appeal case, and its holding would be based on Florida law, not California law. While it might be cited for persuasive authority, it cannot directly establish California legal principles. I also do not have reliable, specific knowledge of its holding to verify the strong proposition that an unblemished OSHA record 'effectively insulates' a party from tort liability.",
+      "evidence_quote": "Okafor v. Brightline Builders, Inc., 291 So.3d 614 (Fla. Dist. Ct. App. 2019);"
+    },
+    {
+      "case_name": "Nguyen v. Allied Pacific Construction Co.",
+      "citation": "112 Cal.App.4th 845 (2003)",
+      "proposition": "Support for the proposition that an unblemished OSHA inspection record demonstrates safety practices met or exceeded regulatory requirements, effectively insulating a party from tort liability predicated on alleged safety failures.",
+      "verdict": "unverifiable",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": true,
+      "reasoning": "I do not have reliable, specific knowledge of the holding of Nguyen v. Allied Pacific Construction Co. to confidently verify that it supports the proposition that an unblemished OSHA record 'effectively insulates' a party from tort liability. This is a strong claim that goes beyond merely being 'highly probative' of due care, and I cannot confirm this specific holding.",
+      "evidence_quote": "Nguyen v. Allied Pacific Construction Co., 112 Cal.App.4th 845 (2003);"
+    },
+    {
+      "case_name": "Reeves v. Summit Engineering Group",
+      "citation": "78 Cal.App.4th 531 (2000)",
+      "proposition": "Support for the proposition that an unblemished OSHA inspection record demonstrates safety practices met or exceeded regulatory requirements, effectively insulating a party from tort liability predicated on alleged safety failures.",
+      "verdict": "unverifiable",
+      "quote_accuracy": "not_a_quote",
+      "is_problem": true,
+      "reasoning": "I do not have reliable, specific knowledge of the holding of Reeves v. Summit Engineering Group to confidently verify that it supports the proposition that an unblemished OSHA record 'effectively insulates' a party from tort liability. This is a strong claim that goes beyond merely being 'highly probative' of due care, and I cannot confirm this specific holding.",
+      "evidence_quote": "Reeves v. Summit Engineering Group, 78 Cal.App.4th 531 (2000)."
+    }
+  ],
+  "consistency_findings": [
+    {
+      "msj_claim": "This action arises from a workplace incident on March 14, 2021, at a commercial construction site located at 2200 West Olympic Boulevard, Los Angeles, California.",
+      "contradicting_document": "medical_records_excerpt",
+      "contradicting_quote": "DATE OF ADMISSION:  March 12, 2021\nTIME OF ADMISSION:  11:32 AM\nATTENDING:          Dr. Anika Patel, MD\n\n-----------------------------------------------------------------------\n\nEMERGENCY DEPARTMENT NOTES\n\nCHIEF COMPLAINT: 36-year-old male presenting with left leg pain, lower back pain, and left wrist pain following a fall from scaffolding at a construction site. Patient reports falling approximately 14 feet when the scaffolding structure he was working on collapsed beneath him.\n\nHISTORY OF PRESENT ILLNESS: Patient was brought in by LAFD paramedics following a workplace accident occurring at approximately 10:45 AM on March 12, 2021.",
+      "severity": "high",
+      "reasoning": "The medical records explicitly state the date of the workplace accident and patient admission as March 12, 2021, directly contradicting the MSJ's assertion of March 14, 2021. This date is further corroborated by the police report and witness statement."
+    },
+    {
+      "msj_claim": "On or about March 14, 2021, Rivera was working on a scaffolding assembly at the project site when a section of the scaffolding gave way.",
+      "contradicting_document": "police_report",
+      "contradicting_quote": "Date of Incident:  March 12, 2021\nTime of Incident:  Approximately 10:45 AM\n\nLocation:          2200 West Olympic Boulevard, Los Angeles, CA 90006",
+      "severity": "high",
+      "reasoning": "The police report clearly states the date of the incident as March 12, 2021, directly contradicting the MSJ's assertion of March 14, 2021. This date is further corroborated by the medical records and witness statement."
+    },
+    {
+      "msj_claim": "Rivera was not wearing required personal protective equipment at the time of the incident, including fall-arrest equipment mandated by site safety protocols.",
+      "contradicting_document": "police_report",
+      "contradicting_quote": "Site supervisor Mark Ellison confirmed that Rivera was wearing a hard hat and harness consistent with site requirements at the time of the collapse. The harness lanyard was found still attached to Rivera but had pulled free from the scaffolding anchor point when the structure gave way. Ellison stated that the anchor point was part of the section that collapsed.",
+      "severity": "high",
+      "reasoning": "The police report explicitly states that Rivera *was* wearing a hard hat and harness consistent with site requirements, directly contradicting the MSJ's claim that he was not wearing required PPE. The report indicates the harness lanyard failed at the anchor point, not that Rivera lacked the equipment."
+    },
+    {
+      "msj_claim": "the undisputed facts establish that Apex Staffing Solutions \u2014 not Harmon \u2014 was the employer responsible for scaffolding operations and for ensuring its employees followed appropriate safety procedures.",
+      "contradicting_document": "witness_statement",
+      "contradicting_quote": "I also mentioned the base plate issue directly to Ray Donner. Donner told me, \"We don't have time to re-do the base. It's been fine. Just get up there and get it done.\"",
+      "severity": "high",
+      "reasoning": "The witness statement indicates that Ray Donner, Harmon's project foreman, actively dismissed safety concerns raised by a scaffolding technician (Diane Tran) regarding the base plate and directed the crew to work on the section. This suggests Harmon's direct involvement in and potential responsibility for safety procedures, contradicting the claim that Apex Staffing Solutions was *solely* responsible."
+    },
+    {
+      "msj_claim": "Rivera has presented no evidence to rebut this presumption.",
+      "contradicting_document": "witness_statement",
+      "contradicting_quote": "I also mentioned the base plate issue directly to Ray Donner. Donner told me, \"We don't have time to re-do the base. It's been fine. Just get up there and get it done.\"",
+      "severity": "high",
+      "reasoning": "The witness statement provides direct evidence (Diane Tran's testimony about Ray Donner's actions) that rebuts the presumption that Apex Staffing Solutions was solely responsible for ensuring safety procedures, directly contradicting the MSJ's claim that no such evidence has been presented."
+    },
+    {
+      "msj_claim": "Harmon's unblemished OSHA inspection record demonstrates that its safety practices met or exceeded all regulatory requirements, effectively insulating it from tort liability predicated on alleged safety failures at the site.",
+      "contradicting_document": "witness_statement",
+      "contradicting_quote": "I noticed several things that concerned me: \n1. Some of the cross-braces on the lower tier appeared to have significant surface rust and looked like they had been reused from a previous job.\n2. The base plate on the far-east end was sitting on a piece of plywood rather than on a proper mudsill or stable footing. The plywood had shifted noticeably since I had last seen it a few days earlier.\n3. Two of the coupling pins on the second tier looked bent or worn.",
+      "severity": "high",
+      "reasoning": "The witness statement details multiple specific safety deficiencies in the scaffolding structure and the Harmon foreman's dismissal of concerns, which directly contradicts the assertion that Harmon's safety practices met or exceeded all regulatory requirements at the time of the incident. The subsequent rebuilding of the scaffolding with new components and proper footings further supports this."
+    },
+    {
+      "msj_claim": "The incident giving rise to this action occurred on March 14, 2021.",
+      "contradicting_document": "witness_statement",
+      "contradicting_quote": "I, Diane Tran, provide the following statement of my own free will regarding the incident that occurred on March 12, 2021, at the construction site located at 2200 West Olympic Boulevard, Los Angeles, California.",
+      "severity": "high",
+      "reasoning": "The witness statement explicitly states the incident occurred on March 12, 2021, directly contradicting the MSJ's assertion of March 14, 2021. This date is further corroborated by the police report and medical records."
+    },
+    {
+      "msj_claim": "Rivera did not file his complaint until March 10, 2023 \u2014 one year and 362 days after the incident.",
+      "contradicting_document": "police_report",
+      "contradicting_quote": "Date of Incident:  March 12, 2021",
+      "severity": "medium",
+      "reasoning": "The MSJ's calculation of \"one year and 362 days\" is based on an incorrect incident date of March 14, 2021. The police report, medical records, and witness statement all confirm the incident occurred on March 12, 2021. Based on the correct incident date, the period from March 12, 2021, to March 10, 2023, is 1 year and 363 days, not 1 year and 362 days."
+    }
+  ],
+  "scored_findings": [
+    {
+      "finding_type": "consistency",
+      "summary": "The MSJ incorrectly states the incident date as March 14, 2021, when medical records explicitly confirm the workplace accident occurred on March 12, 2021.",
+      "severity": "high",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "reasoning": "The medical records provide a verbatim date of admission and incident, \"March 12, 2021\", directly contradicting the MSJ's claim of March 14, 2021, and this is corroborated by other primary documents.",
+      "source": "medical_records_excerpt"
+    },
+    {
+      "finding_type": "consistency",
+      "summary": "The MSJ claims the incident occurred on March 14, 2021, but the police report explicitly states the \"Date of Incident: March 12, 2021\".",
+      "severity": "high",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "reasoning": "The police report provides a verbatim \"Date of Incident: March 12, 2021\", directly contradicting the MSJ's claim of March 14, 2021, and this is corroborated by other primary documents.",
+      "source": "police_report"
+    },
+    {
+      "finding_type": "consistency",
+      "summary": "The MSJ incorrectly states the incident date as March 14, 2021, when the witness statement explicitly confirms the incident occurred on \"March 12, 2021\".",
+      "severity": "high",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "reasoning": "The witness statement explicitly provides the date \"March 12, 2021\", directly contradicting the MSJ's claim of March 14, 2021, and this is corroborated by other primary documents.",
+      "source": "witness_statement"
+    },
+    {
+      "finding_type": "consistency",
+      "summary": "The MSJ claims Rivera was not wearing required personal protective equipment, but the police report states the site supervisor confirmed Rivera \"was wearing a hard hat and harness consistent with site requirements\".",
+      "severity": "high",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "reasoning": "The police report contains a verbatim quote from the site supervisor directly contradicting the MSJ's claim about Rivera's PPE, indicating the equipment was worn but failed at the anchor point.",
+      "source": "police_report"
+    },
+    {
+      "finding_type": "consistency",
+      "summary": "The MSJ claims Apex Staffing Solutions was solely responsible for scaffolding safety, but a witness statement indicates Harmon's foreman dismissed safety concerns and directed work to proceed.",
+      "severity": "high",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "reasoning": "The witness statement provides a verbatim quote from Harmon's foreman, \"We don't have time to re-do the base. It's been fine. Just get up there and get it done.\", which directly implicates Harmon in safety decisions and contradicts the claim of Apex's sole responsibility.",
+      "source": "witness_statement"
+    },
+    {
+      "finding_type": "consistency",
+      "summary": "The MSJ claims Rivera presented no evidence to rebut the presumption of Apex Staffing Solutions' sole responsibility, but a witness statement provides direct evidence of Harmon's foreman dismissing safety concerns.",
+      "severity": "high",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "reasoning": "The witness statement provides direct, verbatim evidence of Harmon's foreman dismissing safety concerns, which directly rebuts the MSJ's claim that no such evidence exists.",
+      "source": "witness_statement"
+    },
+    {
+      "finding_type": "consistency",
+      "summary": "The MSJ claims Harmon's unblemished OSHA record demonstrates superior safety practices, but a witness statement details multiple specific safety deficiencies observed on the scaffolding.",
+      "severity": "high",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "reasoning": "The witness statement provides specific, verbatim details of multiple safety deficiencies observed on the scaffolding, directly contradicting the MSJ's assertion of Harmon's unblemished safety practices.",
+      "source": "witness_statement"
+    },
+    {
+      "finding_type": "citation",
+      "summary": "The proposition that a hirer is \"never liable\" under the Privette doctrine is an overstatement of California law, as hirers can be liable if their retained control affirmatively contributed to the injury.",
+      "severity": "high",
+      "confidence": "medium",
+      "confidence_score": 0.7,
+      "reasoning": "The upstream agent's reasoning explicitly identifies the proposition as an \"overstatement\" and cites subsequent California Supreme Court cases (e.g., Hooker v. Department of Transportation) that clarify the doctrine, demonstrating a strong understanding of the legal principle.",
+      "source": "Privette v. Superior Court"
+    },
+    {
+      "finding_type": "consistency",
+      "summary": "The MSJ's calculation of the time between the incident and complaint filing is incorrect, as it uses the wrong incident date; the correct period is 1 year and 363 days, not 1 year and 362 days.",
+      "severity": "medium",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "reasoning": "The police report, corroborated by other documents, provides a verbatim incident date of \"March 12, 2021\", which, when used for calculation, proves the MSJ's stated duration of \"one year and 362 days\" is mathematically incorrect.",
+      "source": "police_report"
+    },
+    {
+      "finding_type": "citation",
+      "summary": "The proposition regarding the holding of Whitmore v. Delgado Scaffolding Co. could not be verified due to a lack of specific knowledge about this federal district court case.",
+      "severity": "high",
+      "confidence": "low",
+      "confidence_score": 0.2,
+      "reasoning": "The upstream verdict was \"unverifiable\", and the reasoning explicitly states a lack of reliable, specific knowledge of the holding, which is a federal district court case and thus not generally known.",
+      "source": "Whitmore v. Delgado Scaffolding Co."
+    },
+    {
+      "finding_type": "citation",
+      "summary": "The proposition that Kellerman v. Pacific Coast Construction, Inc. establishes a rebuttable presumption of reasonable care based on OSHA compliance could not be verified due to a lack of specific knowledge of the case's holding.",
+      "severity": "high",
+      "confidence": "low",
+      "confidence_score": 0.2,
+      "reasoning": "The upstream verdict was \"unverifiable\", and the reasoning explicitly states a lack of reliable, specific knowledge of the holding regarding this specific legal rule.",
+      "source": "Kellerman v. Pacific Coast Construction, Inc."
+    },
+    {
+      "finding_type": "citation",
+      "summary": "The proposition that Torres v. Granite Falls Dev. Corp. supports an unblemished OSHA record effectively insulating a party from tort liability could not be verified due to a lack of specific knowledge of the case's holding.",
+      "severity": "high",
+      "confidence": "low",
+      "confidence_score": 0.2,
+      "reasoning": "The upstream verdict was \"unverifiable\", and the reasoning explicitly states a lack of reliable, specific knowledge to confirm this strong claim about tort liability.",
+      "source": "Torres v. Granite Falls Dev. Corp."
+    },
+    {
+      "finding_type": "citation",
+      "summary": "The proposition that Blackwell v. Sunrise Contractors, Inc. supports an unblemished OSHA record effectively insulating a party from tort liability could not be verified due to a lack of specific knowledge of the case's holding.",
+      "severity": "high",
+      "confidence": "low",
+      "confidence_score": 0.2,
+      "reasoning": "The upstream verdict was \"unverifiable\", and the reasoning explicitly states a lack of reliable, specific knowledge to confirm this strong claim about tort liability.",
+      "source": "Blackwell v. Sunrise Contractors, Inc."
+    },
+    {
+      "finding_type": "citation",
+      "summary": "The proposition that Nguyen v. Allied Pacific Construction Co. supports an unblemished OSHA record effectively insulating a party from tort liability could not be verified due to a lack of specific knowledge of the case's holding.",
+      "severity": "high",
+      "confidence": "low",
+      "confidence_score": 0.2,
+      "reasoning": "The upstream verdict was \"unverifiable\", and the reasoning explicitly states a lack of reliable, specific knowledge to confirm this strong claim about tort liability.",
+      "source": "Nguyen v. Allied Pacific Construction Co."
+    },
+    {
+      "finding_type": "citation",
+      "summary": "The proposition that Reeves v. Summit Engineering Group supports an unblemished OSHA record effectively insulating a party from tort liability could not be verified due to a lack of specific knowledge of the case's holding.",
+      "severity": "high",
+      "confidence": "low",
+      "confidence_score": 0.2,
+      "reasoning": "The upstream verdict was \"unverifiable\", and the reasoning explicitly states a lack of reliable, specific knowledge to confirm this strong claim about tort liability.",
+      "source": "Reeves v. Summit Engineering Group"
+    },
+    {
+      "finding_type": "citation",
+      "summary": "The proposition that Dixon v. Lone Star Structural, LLC supports an unblemished OSHA record effectively insulating a party from tort liability could not be verified, especially as it is a Texas case and not directly applicable to California law.",
+      "severity": "high",
+      "confidence": "low",
+      "confidence_score": 0.15,
+      "reasoning": "The upstream verdict was \"unverifiable\", and the reasoning highlights that this is a Texas case, making its direct applicability to California law questionable, in addition to a lack of specific knowledge for the strong claim.",
+      "source": "Dixon v. Lone Star Structural, LLC"
+    },
+    {
+      "finding_type": "citation",
+      "summary": "The proposition that Okafor v. Brightline Builders, Inc. supports an unblemished OSHA record effectively insulating a party from tort liability could not be verified, especially as it is a Florida case and not directly applicable to California law.",
+      "severity": "high",
+      "confidence": "low",
+      "confidence_score": 0.15,
+      "reasoning": "The upstream verdict was \"unverifiable\", and the reasoning highlights that this is a Florida case, making its direct applicability to California law questionable, in addition to a lack of specific knowledge for the strong claim.",
+      "source": "Okafor v. Brightline Builders, Inc."
+    }
+  ],
+  "judicial_memo": "The Motion for Summary Judgment presents several high-confidence inconsistencies for the Court's attention. Specifically, the motion repeatedly states the incident date as March 14, 2021, which is directly contradicted by medical records, the police report, and a witness statement, all of which explicitly confirm the workplace accident occurred on March 12, 2021. Furthermore, the motion claims Rivera was not wearing required personal protective equipment, yet the police report states the site supervisor confirmed Rivera \"was wearing a hard hat and harness consistent with site requirements\". Finally, the motion asserts Apex Staffing Solutions was solely responsible for scaffolding safety and that Rivera presented no evidence to rebut this presumption, but a witness statement indicates Harmon's foreman dismissed safety concerns and directed work to proceed, thereby providing direct evidence to the contrary.",
+  "stats": {
+    "citations_extracted": 12,
+    "factual_claims_extracted": 18,
+    "citation_problems": 9,
+    "consistency_issues": 8,
+    "high_confidence_flags": 8
+  },
+  "errors": []
+}

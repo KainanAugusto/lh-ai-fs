@@ -1,8 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pathlib import Path
 
-app = FastAPI()
+import config
+from pipeline import run_pipeline
+
+app = FastAPI(title="BS Detector")
 
 app.add_middleware(
     CORSMiddleware,
@@ -12,19 +14,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DOCUMENTS_DIR = Path(__file__).parent / "documents"
 
-
-def load_documents() -> dict[str, str]:
-    """Load all documents from the documents directory."""
-    documents = {}
-    for file_path in DOCUMENTS_DIR.glob("*.txt"):
-        documents[file_path.stem] = file_path.read_text()
-    return documents
+@app.get("/health")
+def health():
+    """Liveness probe: reports the process is up and which model is configured.
+    Does not call the LLM, so it is safe to poll (Docker healthcheck, load balancer)."""
+    return {"status": "ok", "model": config.MODEL}
 
 
 @app.post("/analyze")
 async def analyze():
-    documents = load_documents()
-    # TODO: Build your multi-agent pipeline here
-    return {"report": None}
+    """Run the multi-agent verification pipeline over the case file."""
+    report = await run_pipeline()
+    return {"report": report.model_dump()}
